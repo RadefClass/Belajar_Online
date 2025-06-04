@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akademia Belajar</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #e8f0fc;
+    }
+
+    header {
+      background: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      padding: 0;
+    }
+
+   .banner {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  display: block;
+  object-fit: cover;
+}
+
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-text {
+      font-size: 18px;
+      font-weight: bold;
+      color: #d8232a;
+      margin-left: 10px;
+    }
+
+    .login-btn {
+      background-color: #003d5c;
+      color: white;
+      padding: 6px 14px;
+      border: none;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .container {
+      padding: 20px 15px;
+    }
+
+    .card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      margin-bottom: 16px;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .card.blue {
+      background-color: #0091ea;
+      color: white;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .soon {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .card-image {
+      width: 60px;
+      height: 60px;
+      margin-left: 10px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .card {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      .card-image {
+        margin-left: 0;
+        margin-top: 10px;
+        align-self: center;
+      }
+
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .login-btn {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Banner Gambar Memanjang -->
+  <img src="header1.jpg" alt="Banner" class="banner">
+
+  <!-- Logo dan Tombol Login -->
+  <div class="topbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" height="36">
+      <div class="logo-text">RadefClass</div>
+    </div>
+    <button class="login-btn">Login</button>
+  </div>
+</header>
+
+<!-- Konten -->
+<div class="container">
+  <!-- Card 1 -->
+ <a href="https://belajar.kemdikbud.go.id/daftar-konten" target="_blank" style="text-decoration: none;">
+  <div class="card blue">
+    <div>
+      <div class="card-title">Sumber Belajar</div>
+      <div class="card-desc">
+        Temukan ribuan konten pembelajaran dalam berbagai bentuk, mulai dari video, audio, artikel, games, dan lab Maya
+      </div>
+    </div>
+    <img class="card-image" src="https://img.icons8.com/color/96/student-center.png" alt="Sumber Belajar">
+  </div>
+</a>
+
+  <!-- Card 2 -->
+ <a href="https://alhazenschool.com/lp/sekolah-sd-online/?gad_source=1&gad_campaignid=21622273810&gclid=CjwKCAjwuIbBBhBvEiwAsNypvR7oD9EOk5pQ_ekqhSi7-LGYp-fGwGOlcRNA6aKBDRuSNzpjJLmXYhoCIrwQAvD_BwE" target="_blank" style="text-decoration: none;">
+  <div class="card">
+    <div>
+      <div class="card-title" style="color: #000000;">Kelas Maya</div>
+      <div class="card-desc">
+        Sebuah <em>Learning Management System</em> (LMS) yang dikembangkan khusus untuk memfasilitasi prosess
+      </div>
+    </div>
+    <img class="card-image" src="https://img.icons8.com/fluency/96/teacher.png" alt="Kelas Maya">
+  </div>
+</a>
+
+
+  <!-- Card 3 -->
+  <a href="https://tryout.id/kelompok-soal/c4ca423/bank-soal-sd" target="_blank" style="text-decoration: none;">
+  <div class="card">
+    <div>
+      <div class="card-title" style="color: #000000;">Bank Soal</div>
+      <div class="card-desc">
+        Fitur kumpulan soal dan materi evaluasi siswa yanng
+      </div>
+    </div>
+    <img class="card-image" src="https://img.icons8.com/color/96/test-passed.png" alt="Bank Soal">
+  </div>
+</a>
+
+  <!-- Card 4 -->
+  <a href="https://phet.colorado.edu/in/simulations/filter?subjects=physics&type=html" target="_blank" style="text-decoration: none;">
+  <div class="card">
+    <div>
+      <div class="card-title" style="color: #000000;">Laboratorium Maya</div>
+      <div class="card-desc">
+        Simulasi praktikum sains interaktif yang dapat diakses secara online oleh siswa
+      </div>
+    </div>
+    <img class="card-image" src="https://img.icons8.com/color/96/microscope.png" alt="Lab Maya">
+  </div>
+</a>
+
+
+</body>
+</html>
